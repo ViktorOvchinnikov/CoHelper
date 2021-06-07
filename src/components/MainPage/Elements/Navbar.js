@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '../../Button.js';
 import '../Styles/Navbar.css';
+function Test(){}
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -48,6 +49,7 @@ function Navbar() {
           {button && <Button buttonStyle='btn--outline'>Войти</Button>}
         </div>
       </nav>
+
     </>
   );
 }
