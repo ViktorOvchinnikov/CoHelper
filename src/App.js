@@ -1,23 +1,20 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import './App.css';
-import Home from './components/pages/Home';
+import Footer from './components/Footer';
+//import './App.css';
+import MainPage from './components/MainPage/MainPage';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Services from './components/pages/Services';
-import Products from './components/pages/Products';
-import SignUp from './components/pages/SignUp';
+import Form from './components/RegistrationForm/Elements/Form.js';
 
 function App() {
   return (
     <>
       <Router>
-        <Navbar />
+        {/* <Navbar /> */}
         <Switch>
-          <Route path='/' exact component={Home} />
-          <Route path='/services' component={Services} />
-          <Route path='/products' component={Products} />
-          <Route path='/sign-up' component={SignUp} />
+          <Route path='/' exact component={MainPage} />
+          <Route path='/sign-up' component={Form} />
         </Switch>
+        <Footer/>
       </Router>
     </>
   );

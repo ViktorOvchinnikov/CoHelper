@@ -1,0 +1,16 @@
+.info {
+    padding: 4rem;
+    background: #fff;
+    margin-bottom: -7rem;
+}
+
+.text{
+  display: flex;
+  text-indent: 100 px;
+  text-align: justify;
+  font-size: 25px;
+}
+
+h1{
+  margin-bottom: 2.8rem;
+}
