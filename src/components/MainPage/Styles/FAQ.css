@@ -1,14 +1,16 @@
 .faq{
     padding: 5rem;
     background: #fff;
+    color: rgb(0, 0, 0);
+    margin-left: auto;
 }
 summary {
-    font-size: 1.25rem;
+    font-size: 25px;
     font-weight: 600;
     background-color: #fff;
     color: rgb(0, 0, 0);
     padding: 1rem;
-    margin-left: -2rem;
+    margin-left: auto;
     margin-right: -2rem;
     margin-bottom: 1rem;
     outline: none;
@@ -16,6 +18,10 @@ summary {
     text-align: left;
     cursor: pointer;
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1500px;
+
   }
   details > summary::after {
     position: absolute;
@@ -34,8 +40,14 @@ summary {
     animation: sweep .5s ease-in-out;
   }
   .faq_content{
+      background: rgb(144, 190, 176);
+      font-size: 20px;
       margin-left: -1rem;
       margin-bottom: 1rem;
+      border-radius: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1500px;
   }
   @keyframes sweep {
     0%    {opacity: 0; margin-top: -10px}

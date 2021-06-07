@@ -13,13 +13,13 @@ function Cards() {
               src='images/img-9.jpg'
               text='IKEA создала новые предметы интерьера в коллаборации с современными художниками'
               label='Вдохновение'
-              path='/services'
+              href='https://adindex.ru/news/adyummy/2021/03/17/292040.phtml'
             />
             <CardItem
               src='images/img-2.jpg'
               text='Коллаборации - новый тренд: как удовлетворить клиентов и увеличить трафик'
               label='Бизнес'
-              path='/services'
+              href='https://pro.rbc.ru/demo/5d7123979a7947144f459107'
             />
           </ul>
           <ul className='cards__items'>
@@ -27,19 +27,19 @@ function Cards() {
               src='images/img-3.jpg'
               text='Две сестры из Ростова выпускают коллекции одежды с «Союзмультфильмом» и Тимати'
               label='Вдохновение'
-              path='/services'
+              href='https://www.forbes.ru/karera-i-svoy-biznes/384611-kak-dve-sestry-pridumali-odezhdu-za-kotoruyu-ne-stydno-i-teper'
             />
             <CardItem
               src='images/img-4.jpg'
               text='Топ-5 правил эффективной коллаборации брендов'
               label='Бизнес'
-              path='/products'
+              href='https://supa.ru/blog/posts/top-5-pravil-effiektivnoi-kollaboratsii-briendov'
             />
             <CardItem
               src='images/img-8.jpg'
               text='Тренды продаж в 2021 году'
               label='Бизнес'
-              path='/sign-up'
+              href='https://planfact.io/blog/posts/trendy-prodazh-v-2021-godu'
             />
           </ul>
         </div>

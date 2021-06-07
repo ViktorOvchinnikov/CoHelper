@@ -13,11 +13,11 @@ const FormSignup = ({ submitForm }) => {
     <div className='form-content-right'>
       <form onSubmit={handleSubmit} className='form' noValidate>
         <h1>
-          Get started with us today! Create your account by filling out the
-          information below.
+          Найдите бизнес-партнера сегодня! 
+          Создайте аккаунт своей компании, заполнив информацию ниже.
         </h1>
         <div className='form-inputs'>
-          <label className='form-label'>Username</label>
+          <label className='form-label'>Название компании</label>
           <input
             className='form-input'
             type='text'

@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../../App.css';
 import { Button } from '../../Button.js';
+import { Link } from 'react-router-dom';
 import '../Styles/HelloSection.css';
 
 function HeroSection() {
@@ -10,6 +11,7 @@ function HeroSection() {
       <h1>НАЙДИ ПАРТНЕРА СЕГОДНЯ</h1>
       <p>Чего же вы ждете?</p>
       <div className='hero-btns'>
+        <Link to='/sign-up'>
         <Button
           className='btns'
           buttonStyle='btn--outline'
@@ -17,14 +19,17 @@ function HeroSection() {
         >
           ПРИСОЕДИНИТЬСЯ
         </Button>
+        </Link>
+        <a href="#about">
         <Button
           className='btns'
           buttonStyle='btn--primary'
           buttonSize='btn--large'
           onClick={console.log('hey')}
         >
-          УЗНАТЬ ПОДРОБНЕЕ <i class="far fa-question-circle"/>
+        УЗНАТЬ ПОДРОБНЕЕ <i class="far fa-question-circle"/>
         </Button>
+        </a>
       </div>
     </div>
   );
