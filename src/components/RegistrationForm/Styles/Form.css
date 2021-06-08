@@ -6,6 +6,7 @@
     border-radius: 10px;
     height: 700px;
     display: grid;
+    font-family: 'PT Sans', sans-serif;
     grid-template-columns: 1fr 1fr;
   }
   
@@ -97,7 +98,7 @@
   
   .form-label {
     display: inline-block;
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-bottom: -3px;
     color: #fff;
   }
@@ -114,7 +115,7 @@
   
   .form-input::placeholder {
     color: #595959;
-    font-size: 12px;
+    font-size: 0.9rem;
   }
   
   .form-input-btn {

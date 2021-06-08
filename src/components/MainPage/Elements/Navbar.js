@@ -29,7 +29,7 @@ function Navbar() {
         <div className='navbar-container'>
           <a href="/" className='navbar-logo' onClick={closeMobileMenu}>
             CoHelper
-            <i class="fas fa-comments-dollar"></i>
+            <i className="fas fa-comments-dollar"></i>
           </a>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />

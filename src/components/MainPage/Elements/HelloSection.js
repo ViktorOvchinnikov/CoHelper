@@ -27,7 +27,7 @@ function HeroSection() {
           buttonSize='btn--large'
           onClick={console.log('hey')}
         >
-        УЗНАТЬ ПОДРОБНЕЕ <i class="far fa-question-circle"/>
+        УЗНАТЬ ПОДРОБНЕЕ <i className="far fa-question-circle"/>
         </Button>
         </a>
       </div>
