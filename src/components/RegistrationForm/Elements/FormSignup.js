@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import validate from './validateInfo';
 import useForm from './useForm';
 import '../Styles/Form.css';
@@ -9,6 +9,10 @@ const FormSignup = ({ submitForm }) => {
     submitForm,
     validate
   );
+  const [checkProv, setCheckProv] = useState(true);
+  const [checkClient, setCheckClient] = useState(true);
+  const [checkInvest, setCheckInvest] = useState(true);
+  const [checkAdv, setCheckAdv] = useState(true);
 
   return (
     <div className='form-content-right'>
@@ -29,25 +33,26 @@ const FormSignup = ({ submitForm }) => {
           />
         </div>
         <div className='form-inputs'>
-          <label className='form-label'>Чем занимается Ваша компания?</label>{errors.username && <p className='form-error'>{errors.username}</p>}
+          <label className='form-label'>Чем занимается Ваша компания?</label>{errors.activity && <p className='form-error'>{errors.activity}</p>}
           <select
             className='form-input'
             name='activity'
+            onChange={e => values.activity = e.target.value}
           >
-            <option className='form-input' selected disabled>Выберите род деятельности</option>
-            <option className='form-input' value='IT, компьютеры, интернет'>IT, компьютеры, интернет</option>
-            <option className='form-input' value='Гостинично-ресторанный бизнес, туризм'>Гостинично-ресторанный бизнес, туризм</option>
-            <option className='form-input' value='Дизайн, творчество'>Дизайн, творчество</option>
-            <option className='form-input' value='Красота, фитнес, спорт'>Красота, фитнес, спорт</option>
-            <option className='form-input' value='Образование, наука'>Образование, наука</option>
-            <option className='form-input' value='Сельское хозяйство, агробизнес'>Сельское хозяйство, агробизнес</option>
-            <option className='form-input' value='Розничная торговля'>Розничная торговля</option>
-            <option className='form-input' value='Сфера обслуживания'>Сфера обслуживания</option>
-            <option className='form-input' value='Производство'>Производство</option>
+            <option className='form-input' value='0' selected disabled>Выберите род деятельности</option>
+            <option className='form-input' value='1'>IT, компьютеры, интернет</option>
+            <option className='form-input' value='2'>Гостинично-ресторанный бизнес, туризм</option>
+            <option className='form-input' value='3'>Дизайн, творчество</option>
+            <option className='form-input' value='4'>Красота, фитнес, спорт</option>
+            <option className='form-input' value='5'>Образование, наука</option>
+            <option className='form-input' value='6'>Сельское хозяйство, агробизнес</option>
+            <option className='form-input' value='7'>Розничная торговля</option>
+            <option className='form-input' value='8'>Сфера обслуживания</option>
+            <option className='form-input' value='9'>Производство</option>
           </select>
         </div>
         <div className='form-inputs'>
-          <label className='form-label'>Местоположение компании</label>{errors.username && <p className='form-error'>{errors.username}</p>}
+          <label className='form-label'>Местоположение компании</label>{errors.city && <p className='form-error'>{errors.city}</p>}
           <input
             className='form-input'
             type='text'
@@ -92,21 +97,21 @@ const FormSignup = ({ submitForm }) => {
           />
         </div>
         <div className='form-inputs'>
-          <label className='form-label'>Что Вы ищете?</label><br />
-          <label class="checkbox-btn">
-            <input type="checkbox" />
+          <label className='form-label'>Что Вы ищете?</label>{errors.findFor && <p>{errors.findFor}</p>}<br />
+          <label className="checkbox-btn">
+            <input type="checkbox" onChange={e => { e.target.checked = checkProv; setCheckProv(!checkProv); values.findFor.providers = checkProv }} />
             <span>Поставщики</span>
           </label>
-          <label class="checkbox-btn">
-            <input type="checkbox" />
+          <label className="checkbox-btn">
+            <input type="checkbox" onChange={e => {e.target.checked = checkClient; setCheckClient(!checkClient); values.findFor.clients = checkClient}}/>
             <span>Заказчики</span>
           </label>
-          <label class="checkbox-btn">
-            <input type="checkbox" />
+          <label className="checkbox-btn">
+            <input type="checkbox" onChange={e => {e.target.checked = checkInvest; setCheckInvest(!checkInvest); values.findFor.investors = checkInvest}}/>
             <span>Инвесторы</span>
           </label>
-          <label class="checkbox-btn">
-            <input type="checkbox" />
+          <label className="checkbox-btn">
+            <input type="checkbox" onChange={e => {e.target.checked = checkAdv; setCheckAdv(!checkAdv); values.findFor.advertising = checkAdv}}/>
             <span>Совместная реклама</span>
           </label>
         </div>
@@ -115,7 +120,7 @@ const FormSignup = ({ submitForm }) => {
           Зарегистрироваться
         </button>
         <span className='form-input-login'>
-          Уже есть аккаунт? Войдите <a href='#'>здесь</a>
+          Уже есть аккаунт? Войдите <a>здесь</a>
         </span>
       </form>
     </div>

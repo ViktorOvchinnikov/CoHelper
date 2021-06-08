@@ -5,6 +5,11 @@ export default function validateInfo(values) {
       errors.username = 'Введите название!';
     }
 
+
+    if(!(values.activity>0)){
+      errors.activity = 'Сделайте выбор!'
+    }
+
     if (!values.city.trim()) {
       errors.city = 'Введите местоположение!';
     }
@@ -25,5 +30,10 @@ export default function validateInfo(values) {
     } else if (values.password2 !== values.password) {
       errors.password2 = 'Пароль не подтвержден!';
     }
+
+    if (!(values.findFor.advertising || values.findFor.clients || values.findFor.providers || values.findFor.investors)){
+      errors.findFor = 'Выберите хотя бы один вариант';
+    }
+
     return errors;
   }

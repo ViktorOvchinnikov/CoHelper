@@ -86,16 +86,19 @@
   .form-inputs p {
     display: inline-block;
     font-size: 0.8rem;
+    padding-bottom: 0px;
     position: absolute;
+    margin-top: 7px;
+    line-height: 1;
     right: 45px;
-    margin-bottom: -10%;
     color: #f00e0e;
+    margin-bottom: 0px;
   }
   
   .form-label {
     display: inline-block;
     font-size: 0.8rem;
-    margin-bottom: 6px;
+    margin-bottom: -3px;
     color: #fff;
   }
 

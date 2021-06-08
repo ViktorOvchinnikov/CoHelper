@@ -3,10 +3,12 @@ import { useState, useEffect } from 'react';
 const useForm = (callback, validate) => {
   const [values, setValues] = useState({
     username: '',
+    activity: '',
     email: '',
     city: '',
     password: '',
-    password2: ''
+    password2: '',
+    findFor: {providers: '', clients: '', investors: '', advertising: ''},
   });
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);

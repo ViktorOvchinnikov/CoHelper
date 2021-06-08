@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '../../Button.js';
-import { Link } from 'react-router-dom';
 import '../Styles/Navbar.css';
 
 function Navbar() {
@@ -28,10 +27,10 @@ function Navbar() {
     <>
       <nav id="" className='navbar'>
         <div className='navbar-container'>
-            <a href="" className='navbar-logo' onClick={closeMobileMenu}>
+          <a href="/" className='navbar-logo' onClick={closeMobileMenu}>
             CoHelper
             <i class="fas fa-comments-dollar"></i>
-            </a>
+          </a>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
@@ -40,7 +39,7 @@ function Navbar() {
               <a href="#news" className='nav-links' onClick={closeMobileMenu}>Новости</a>
             </li>
             <li className='nav-item'>
-                <a href="#about" className="nav-links" onClick={closeMobileMenu}>О платформе</a>
+              <a href="#about" className="nav-links" onClick={closeMobileMenu}>О платформе</a>
             </li>
             <li className='nav-item'>
               <a href="#FAQ" className="nav-links" onClick={closeMobileMenu}>FAQ</a>
@@ -49,7 +48,6 @@ function Navbar() {
           {button && <Button buttonStyle='btn--outline'>Войти</Button>}
         </div>
       </nav>
-
     </>
   );
 }
