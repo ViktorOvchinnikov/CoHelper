@@ -1,0 +1,39 @@
+.checkbox-btn {
+	display: inline-block;
+	margin: 0 5px 0 0;
+	user-select: none;
+	position: relative;
+}
+.checkbox-btn input[type=checkbox] {
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+.checkbox-btn span {
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 10px;
+	line-height: 25px;
+	border: 1px solid rgb(58, 58, 58);
+	border-radius: 4px;
+    background: #ffffff;
+	transition: background 0.2s ease;
+}
+ 
+/* Checked */
+.checkbox-btn input[type=checkbox]:checked + span {
+	background:  rgb(90, 190, 160);
+}
+ 
+/* Focus */
+.focused span {
+	box-shadow: 0 0 0 0.2rem rgb(255, 255, 255);
+}
+ 
+/* Hover */
+.checkbox-btn:hover {
+	color: rgb(0, 255, 179);
+}
+ 
