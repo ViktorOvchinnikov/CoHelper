@@ -18,7 +18,7 @@ const FormSignup = ({ submitForm }) => {
           Создайте аккаунт своей компании, заполнив информацию ниже.
         </h1>
         <div className='form-inputs'>
-          <label className='form-label'>Название компании</label>
+          <label className='form-label'>Название компании</label>{errors.username && <p className='form-error'>{errors.username}</p>}
           <input
             className='form-input'
             type='text'
@@ -27,10 +27,9 @@ const FormSignup = ({ submitForm }) => {
             value={values.username}
             onChange={handleChange}
           />
-          {errors.username && <p>{errors.username}</p>}
         </div>
         <div className='form-inputs'>
-          <label className='form-label'>Чем занимается Ваша компания?</label>
+          <label className='form-label'>Чем занимается Ваша компания?</label>{errors.username && <p className='form-error'>{errors.username}</p>}
           <select
             className='form-input'
             name='activity'
@@ -48,7 +47,7 @@ const FormSignup = ({ submitForm }) => {
           </select>
         </div>
         <div className='form-inputs'>
-          <label className='form-label'>Местоположение компании</label>
+          <label className='form-label'>Местоположение компании</label>{errors.username && <p className='form-error'>{errors.username}</p>}
           <input
             className='form-input'
             type='text'
@@ -60,7 +59,7 @@ const FormSignup = ({ submitForm }) => {
           />
         </div>
         <div className='form-inputs'>
-          <label className='form-label'>Email</label>
+          <label className='form-label'>Email</label>{errors.email && <p>{errors.email}</p>}
           <input
             className='form-input'
             type='email'
@@ -69,10 +68,9 @@ const FormSignup = ({ submitForm }) => {
             value={values.email}
             onChange={handleChange}
           />
-          {errors.email && <p>{errors.email}</p>}
         </div>
         <div className='form-inputs'>
-          <label className='form-label'>Пароль</label>
+          <label className='form-label'>Пароль</label>{errors.password && <p>{errors.password}</p>}
           <input
             className='form-input'
             type='password'
@@ -81,10 +79,9 @@ const FormSignup = ({ submitForm }) => {
             value={values.password}
             onChange={handleChange}
           />
-          {errors.password && <p>{errors.password}</p>}
         </div>
         <div className='form-inputs'>
-          <label className='form-label'>Подтверждение пароля</label>
+          <label className='form-label'>Подтверждение пароля</label>{errors.password2 && <p>{errors.password2}</p>}
           <input
             className='form-input'
             type='password'
@@ -93,7 +90,6 @@ const FormSignup = ({ submitForm }) => {
             value={values.password2}
             onChange={handleChange}
           />
-          {errors.password2 && <p>{errors.password2}</p>}
         </div>
         <div className='form-inputs'>
           <label className='form-label'>Что Вы ищете?</label><br />

@@ -84,8 +84,11 @@
   }
   
   .form-inputs p {
+    display: inline-block;
     font-size: 0.8rem;
-    margin-top: 0.5rem;
+    position: absolute;
+    right: 45px;
+    margin-bottom: -10%;
     color: #f00e0e;
   }
   
@@ -119,7 +122,7 @@
     background: linear-gradient(
       90deg,
       rgb(39, 176, 255) 0%,
-      rgb(0, 232, 236) 100%
+      rgb(118, 255, 214)  100%
     );
     outline: none;
     border: none;
@@ -131,7 +134,7 @@
     cursor: pointer;
     background: linear-gradient(
       90deg,
-      rgb(39, 143, 255) 0%,
+      rgb(118, 255, 214) 0%,
       rgb(12, 99, 250) 100%
     );
     transition: all 0.4s ease-out;

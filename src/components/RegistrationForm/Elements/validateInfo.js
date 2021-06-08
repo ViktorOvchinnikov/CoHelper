@@ -2,24 +2,28 @@ export default function validateInfo(values) {
     let errors = {};
   
     if (!values.username.trim()) {
-      errors.username = 'Username required';
+      errors.username = 'Введите название!';
+    }
+
+    if (!values.city.trim()) {
+      errors.city = 'Введите местоположение!';
     }
   
     if (!values.email) {
-      errors.email = 'Email required';
+      errors.email = 'Введите email!';
     } else if (!/\S+@\S+\.\S+/.test(values.email)) {
-      errors.email = 'Email address is invalid';
+      errors.email = 'Email введен неверно!';
     }
     if (!values.password) {
-      errors.password = 'Password is required';
+      errors.password = 'Введите пароль!';
     } else if (values.password.length < 6) {
-      errors.password = 'Password needs to be 6 characters or more';
+      errors.password = 'Минимум 6 символов!';
     }
   
     if (!values.password2) {
-      errors.password2 = 'Password is required';
+      errors.password2 = 'Введите пароль!';
     } else if (values.password2 !== values.password) {
-      errors.password2 = 'Passwords do not match';
+      errors.password2 = 'Пароль не подтвержден!';
     }
     return errors;
   }
