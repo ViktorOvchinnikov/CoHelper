@@ -70,6 +70,10 @@
   .nav-links-mobile {
     display: none;
   }
+
+  .into-btn{
+    margin-bottom: 16px;
+  }
   
   .menu-icon {
     display: none;

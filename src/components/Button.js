@@ -19,7 +19,7 @@ export const Button = ({
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
   return (
-    <div className='btn-mobile'>
+    <a className='btn-mobile'>
       <button
         className={`btn ${checkButtonStyle} ${checkButtonSize}`}
         onClick={onClick}
@@ -27,6 +27,6 @@ export const Button = ({
       >
         {children}
       </button>
-    </div>
+    </a>
   );
 };

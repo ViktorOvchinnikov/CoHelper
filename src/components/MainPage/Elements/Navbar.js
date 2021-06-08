@@ -45,7 +45,7 @@ function Navbar() {
               <a href="#FAQ" className="nav-links" onClick={closeMobileMenu}>FAQ</a>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>Войти</Button>}
+          <div className='into-btn'>{button && <Button buttonStyle='btn--outline'>Войти</Button>}</div>
         </div>
       </nav>
     </>

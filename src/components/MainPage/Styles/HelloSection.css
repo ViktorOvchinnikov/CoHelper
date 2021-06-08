@@ -34,10 +34,13 @@ video {
   
   .hero-btns {
     margin-top: 32px;
+    display: inline;
+    position: relative;
   }
   
   .hero-btns .btn {
     margin: 6px;
+    display: inline;
   }
   
   .fa-question-circle {
