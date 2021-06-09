@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0d8d01fb0ac6abbb2ab900b13916ecb9",
+    "revision": "1917ca4c0af7aa7581db0428bf6901dc",
     "url": "/CoHelper/index.html"
   },
   {
-    "revision": "7097e1ecc0caa5a31547",
-    "url": "/CoHelper/static/css/main.7f0481d7.chunk.css"
+    "revision": "691f948514183f97d9fa",
+    "url": "/CoHelper/static/css/main.dbc6294d.chunk.css"
   },
   {
     "revision": "4bfed497cf5e2f9543e9",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/CoHelper/static/js/2.13231cbb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7097e1ecc0caa5a31547",
+    "revision": "691f948514183f97d9fa",
     "url": "/CoHelper/static/js/main.927f4c91.chunk.js"
   },
   {
