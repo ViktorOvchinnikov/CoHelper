@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/CoHelper/static/css/main.7f0481d7.chunk.css",
+    "main.css": "/CoHelper/static/css/main.dbc6294d.chunk.css",
     "main.js": "/CoHelper/static/js/main.927f4c91.chunk.js",
     "main.js.map": "/CoHelper/static/js/main.927f4c91.chunk.js.map",
     "runtime-main.js": "/CoHelper/static/js/runtime-main.f5b14d6b.js",
@@ -8,9 +8,9 @@
     "static/js/2.13231cbb.chunk.js": "/CoHelper/static/js/2.13231cbb.chunk.js",
     "static/js/2.13231cbb.chunk.js.map": "/CoHelper/static/js/2.13231cbb.chunk.js.map",
     "index.html": "/CoHelper/index.html",
-    "precache-manifest.c48c9ad4adeb5670d09d703808589b4b.js": "/CoHelper/precache-manifest.c48c9ad4adeb5670d09d703808589b4b.js",
+    "precache-manifest.497a6b4389aa0dcba71fdf069959a5fa.js": "/CoHelper/precache-manifest.497a6b4389aa0dcba71fdf069959a5fa.js",
     "service-worker.js": "/CoHelper/service-worker.js",
-    "static/css/main.7f0481d7.chunk.css.map": "/CoHelper/static/css/main.7f0481d7.chunk.css.map",
+    "static/css/main.dbc6294d.chunk.css.map": "/CoHelper/static/css/main.dbc6294d.chunk.css.map",
     "static/js/2.13231cbb.chunk.js.LICENSE.txt": "/CoHelper/static/js/2.13231cbb.chunk.js.LICENSE.txt",
     "static/media/img-12.jpg": "/CoHelper/static/media/img-12.c0d47291.jpg",
     "static/media/img-2.jpg": "/CoHelper/static/media/img-2.f5653692.jpg",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.f5b14d6b.js",
     "static/js/2.13231cbb.chunk.js",
-    "static/css/main.7f0481d7.chunk.css",
+    "static/css/main.dbc6294d.chunk.css",
     "static/js/main.927f4c91.chunk.js"
   ]
 }
