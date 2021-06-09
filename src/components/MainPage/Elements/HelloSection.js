@@ -3,11 +3,12 @@ import '../../../App.css';
 import { Button } from '../../Button.js';
 import { Link } from 'react-router-dom';
 import '../Styles/HelloSection.css';
+import video from '../../../videos/video-1.mp4'
 
 function HeroSection() {
   return (
     <div className='hero-container'>
-      <video src='/videos/video-1.mp4' autoPlay loop muted />
+      <video src={video} autoPlay loop muted />
       <h1>НАЙДИ ПАРТНЕРА СЕГОДНЯ</h1>
       <p>Чего же вы ждете?</p>
       <div className='hero-btns'>

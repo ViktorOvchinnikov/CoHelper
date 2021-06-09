@@ -1,6 +1,7 @@
 import React from 'react';
 import './Auth.css';
 import { Link } from 'react-router-dom';
+import authImg from '../../images/img13.png';
 
 const AuthForm = () => {
     const handleSubmit = e => {
@@ -8,32 +9,32 @@ const AuthForm = () => {
     };
 
     return (
-        <div className='sign-up'>
-        <div className='form-container'>
-          <Link to='/' className='close-btn'>
-            <span className='close-btn'>×</span>
+        <div className='sign-in'>
+        <div className='form-container-auth'>
+          <Link to='/' className='close-btn-auth'>
+            <span className='close-btn-auth'>×</span>
           </Link>
-          <div className='form-content-left'>
-            <img className='form-img' src='images/img13.png' alt='business' />
+          <div className='form-content-left-auth'>
+            <img className='form-img-auth' src={authImg} alt='business' />
           </div>
-        <div className='form-content-right'>
-            <form onSubmit={handleSubmit} className='form' noValidate>
+        <div className='form-content-right-auth'>
+            <form onSubmit={handleSubmit} className='form-auth' noValidate>
                 <h1>
                     Введите данные аккаунта своей компании
                 </h1>
-                <div className='form-inputs'>
-                    <label className='form-label'>Название компании</label>
+                <div className='form-inputs-auth'>
+                    <label className='form-label-auth'>Название компании</label>
                     <input
-                        className='form-input'
+                        className='form-input-auth'
                         type='text'
                         name='username'
                         placeholder='Введите название компании'
                     />
                 </div>
-                <div className='form-inputs'>
-                    <label className='form-label'>Пароль</label>
+                <div className='form-inputs-auth'>
+                    <label className='form-label-auth'>Пароль</label>
                     <input
-                        className='form-input'
+                        className='form-input-auth'
                         type='password'
                         name='password'
                         placeholder='Введите пароль'
@@ -41,7 +42,7 @@ const AuthForm = () => {
                     />
                 </div>
 
-                <button className='form-input-btn' type='submit'>
+                <button className='form-input-btn-auth' type='submit'>
                     Войти
             </button>
             </form>
