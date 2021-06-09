@@ -9,6 +9,7 @@ const FormSignup = ({ submitForm }) => {
     submitForm,
     validate
   );
+
   const [checkProv, setCheckProv] = useState(true);
   const [checkClient, setCheckClient] = useState(true);
   const [checkInvest, setCheckInvest] = useState(true);

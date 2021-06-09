@@ -9,11 +9,13 @@ import AboutPlatform from './Elements/AboutPlatform.js'
 function MainPage() {
   return (
     <>
-      <Navbar />
-      <HelloSection />
-      <Cards/>
-      <AboutPlatform />
-      <FAQ />
+      <>
+        <Navbar />
+        <HelloSection />
+        <Cards />
+        <AboutPlatform />
+        <FAQ />
+      </>
     </>
   );
 }
