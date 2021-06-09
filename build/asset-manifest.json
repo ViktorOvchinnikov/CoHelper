@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/CoHelper/static/css/main.fcb382ee.chunk.css",
+    "main.js": "/CoHelper/static/js/main.eefb8352.chunk.js",
+    "main.js.map": "/CoHelper/static/js/main.eefb8352.chunk.js.map",
+    "runtime-main.js": "/CoHelper/static/js/runtime-main.f5b14d6b.js",
+    "runtime-main.js.map": "/CoHelper/static/js/runtime-main.f5b14d6b.js.map",
+    "static/js/2.659eaeeb.chunk.js": "/CoHelper/static/js/2.659eaeeb.chunk.js",
+    "static/js/2.659eaeeb.chunk.js.map": "/CoHelper/static/js/2.659eaeeb.chunk.js.map",
+    "index.html": "/CoHelper/index.html",
+    "precache-manifest.23f6d1091743b15f6f07de99504fdf27.js": "/CoHelper/precache-manifest.23f6d1091743b15f6f07de99504fdf27.js",
+    "service-worker.js": "/CoHelper/service-worker.js",
+    "static/css/main.fcb382ee.chunk.css.map": "/CoHelper/static/css/main.fcb382ee.chunk.css.map",
+    "static/js/2.659eaeeb.chunk.js.LICENSE.txt": "/CoHelper/static/js/2.659eaeeb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f5b14d6b.js",
+    "static/js/2.659eaeeb.chunk.js",
+    "static/css/main.fcb382ee.chunk.css",
+    "static/js/main.eefb8352.chunk.js"
+  ]
+}
