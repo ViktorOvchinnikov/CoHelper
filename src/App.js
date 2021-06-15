@@ -8,17 +8,14 @@ import AuthForm from './components/AuthForm/AuthForm.js'
 
 function App() {
   return (
-    <>
       <Router>
-        {/* <Navbar /> */}
         <Switch>
           <Route path='/' exact component={MainPage} />
           <Route path='/sign-up' component={Form} />
           <Route path='/sign-in' component={AuthForm} />
         </Switch>
-        <Footer/>
+        <Footer />
       </Router>
-    </>
   );
 }
 
