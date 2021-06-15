@@ -4,6 +4,8 @@ import validate from './validateInfo';
 import useForm from './useForm';
 import '../Styles/Form.css';
 import '../Styles/Checkboxes.css';
+import validateInfo from './validateInfo';
+
 
 const FormSignup = ({ submitForm }) => {
   const { handleChange, handleSubmit, values, errors } = useForm(
@@ -105,15 +107,15 @@ const FormSignup = ({ submitForm }) => {
             <span>Поставщики</span>
           </label>
           <label className="checkbox-btn">
-            <input type="checkbox" onChange={e => {e.target.checked = checkClient; setCheckClient(!checkClient); values.findFor.clients = checkClient}}/>
+            <input type="checkbox" onChange={e => { e.target.checked = checkClient; setCheckClient(!checkClient); values.findFor.clients = checkClient }} />
             <span>Заказчики</span>
           </label>
           <label className="checkbox-btn">
-            <input type="checkbox" onChange={e => {e.target.checked = checkInvest; setCheckInvest(!checkInvest); values.findFor.investors = checkInvest}}/>
+            <input type="checkbox" onChange={e => { e.target.checked = checkInvest; setCheckInvest(!checkInvest); values.findFor.investors = checkInvest }} />
             <span>Инвесторы</span>
           </label>
           <label className="checkbox-btn">
-            <input type="checkbox" onChange={e => {e.target.checked = checkAdv; setCheckAdv(!checkAdv); values.findFor.advertising = checkAdv}}/>
+            <input type="checkbox" onChange={e => { e.target.checked = checkAdv; setCheckAdv(!checkAdv); values.findFor.advertising = checkAdv }} />
             <span>Совместная реклама</span>
           </label>
         </div>

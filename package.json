@@ -1,5 +1,4 @@
 {
-  
   "name": "navbar-dropdown-v1",
   "version": "0.1.0",
   "private": true,
@@ -9,6 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "firebase": "^8.6.5",
     "react": "^16.13.1",
+    "react-async": "^10.0.1",
     "react-bootstrap": "^1.6.0",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
