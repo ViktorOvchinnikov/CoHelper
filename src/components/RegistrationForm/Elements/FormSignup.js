@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import validate from './validateInfo';
 import useForm from './useForm';
 import '../Styles/Form.css';
@@ -121,7 +122,7 @@ const FormSignup = ({ submitForm }) => {
           Зарегистрироваться
         </button>
         <span className='form-input-login'>
-          Уже есть аккаунт? Войдите <a>здесь</a>
+          Уже есть аккаунт? Войдите <Link className='form-input-login-link' to='/sign-in'>здесь</Link>
         </span>
       </form>
     </div>

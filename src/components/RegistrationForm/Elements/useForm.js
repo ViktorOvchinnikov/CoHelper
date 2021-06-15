@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import firebase from 'firebase';
-import firestore from "firebase";
 
 const useForm = (callback, validate) => {
   const [values, setValues] = useState({
