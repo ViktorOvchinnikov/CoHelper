@@ -41,15 +41,15 @@ const FormSignup = ({ submitForm }) => {
             onChange={e => values.activity = e.target.value}
           >
             <option className='form-input' value='0' selected disabled>Выберите род деятельности</option>
-            <option className='form-input' value='1'>IT, компьютеры, интернет</option>
-            <option className='form-input' value='2'>Гостинично-ресторанный бизнес, туризм</option>
-            <option className='form-input' value='3'>Дизайн, творчество</option>
-            <option className='form-input' value='4'>Красота, фитнес, спорт</option>
-            <option className='form-input' value='5'>Образование, наука</option>
-            <option className='form-input' value='6'>Сельское хозяйство, агробизнес</option>
-            <option className='form-input' value='7'>Розничная торговля</option>
-            <option className='form-input' value='8'>Сфера обслуживания</option>
-            <option className='form-input' value='9'>Производство</option>
+            <option className='form-input' value='IT, компьютеры, интернет'>IT, компьютеры, интернет</option>
+            <option className='form-input' value='Гостинично-ресторанный бизнес, туризм'>Гостинично-ресторанный бизнес, туризм</option>
+            <option className='form-input' value='Дизайн, творчество'>Дизайн, творчество</option>
+            <option className='form-input' value='Красота, фитнес, спорт'>Красота, фитнес, спорт</option>
+            <option className='form-input' value='Образование, наука'>Образование, наука</option>
+            <option className='form-input' value='Сельское хозяйство, агробизнес'>Сельское хозяйство, агробизнес</option>
+            <option className='form-input' value='Розничная торговля'>Розничная торговля</option>
+            <option className='form-input' value='Сфера обслуживания'>Сфера обслуживания</option>
+            <option className='form-input' value='Производство'>Производство</option>
           </select>
         </div>
         <div className='form-inputs'>

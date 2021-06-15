@@ -6,7 +6,7 @@ export default function validateInfo(values) {
     }
 
 
-    if(!(values.activity>0)){
+    if(!(values.activity!=='0')){
       errors.activity = 'Сделайте выбор!'
     }
 
