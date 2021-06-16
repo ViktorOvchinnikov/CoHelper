@@ -13,7 +13,7 @@ function App() {
         <Switch>
           <Route path='/' exact component={MainPage} />
           <Route path='/sign-up' component={Form} />
-          <Route path='/sign-in' component={HomePage} />
+          <Route path='/sign-in' component={AuthForm} />
           <Route path='/homepage' component={HomePage} />
         </Switch>
         <Footer />
