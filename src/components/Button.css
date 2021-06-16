@@ -26,6 +26,14 @@
   transition: all 0.3s ease-out;
 }
 
+.btn--test {
+  background-color: rgb(175, 184, 181);
+  border: 1px solid black;
+  margin: 5%;
+  margin-top: -5%;
+  color:black;
+}
+
 .btn--medium {
   padding: 8px 20px;
   font-size: 18px;

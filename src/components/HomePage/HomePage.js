@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../../App.css';
+// import '../../App.css';
 import Navbar from './Elements/Navbar.js';
 import Cards from './Elements/Cards.js';
 import firebase from 'firebase';
@@ -32,9 +32,7 @@ function MainPage() {
         <>
             <Navbar />
             <>
-                <h1 onClick={()=>{logCities(); console.log('next')}}>Hello</h1>
-                <h1>{text[0]}</h1>
-                <h1>{text[1]}</h1>
+                <Cards />
             </>
         </>
     );
