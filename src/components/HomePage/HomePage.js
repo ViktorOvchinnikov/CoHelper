@@ -30,6 +30,7 @@ function MainPage() {
 
     return (
         <>
+            <Navbar />
             <>
                 <h1 onClick={()=>{logCities(); console.log('next')}}>Hello</h1>
                 <h1>{text[0]}</h1>
