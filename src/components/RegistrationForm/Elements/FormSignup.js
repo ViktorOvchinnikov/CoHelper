@@ -4,8 +4,6 @@ import validate from './validateInfo';
 import useForm from './useForm';
 import '../Styles/Form.css';
 import '../Styles/Checkboxes.css';
-import validateInfo from './validateInfo';
-
 
 const FormSignup = ({ submitForm }) => {
   const { handleChange, handleSubmit, values, errors } = useForm(

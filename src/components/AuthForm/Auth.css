@@ -1,6 +1,6 @@
 .sign-in {
-  margin-top: 225px;
-  margin-bottom: 225px;
+  margin-top: 265px;
+  margin-bottom: 265px;
 }
 
 .form-container-auth {
@@ -147,6 +147,11 @@
     color: #fff;
     width: 80%;
     text-align: center;
+  }
+
+  .error_message{
+    color: #f00e0e;
+    margin-bottom: 0em;
   }
   
   .form-input-login-auth a {
