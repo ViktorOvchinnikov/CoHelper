@@ -34,23 +34,19 @@ const useForm = (callback, validate) => {
     () => {
       if (Object.keys(errors).length === 0 && isSubmitting) {
         callback();
-        let token = db.collection('users').doc().id;
-        db.collection("users").add({
-          'token': token,
+        let generatedId = db.collection('users').doc().id;
+        db.collection('users').doc(generatedId).set({
+          'token': generatedId,
           'city': values.city,
           'activity': values.activity,
           'email': values.email,
           'password': values.password,
           'companyName': values.username,
           'findFor': values.findFor,
-        })
-          .then((docRef) => {
-            console.log("Document written with ID: ", docRef.id);
-          })
-          .catch((error) => {
-            console.error("Error adding document: ", error);
-          });
+        });
+        console.log(generatedId);
       }
+
     },
     [errors]
   );

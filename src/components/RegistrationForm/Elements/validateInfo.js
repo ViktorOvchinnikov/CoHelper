@@ -25,7 +25,7 @@ export default function validateInfo(values) {
     const t = async () => {
        await db.collection("users").get().then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
-          console.log(values.email == doc.data().email)
+          // console.log(db.collection("users").get())
           if (values.email == doc.data().email) {
             errors.email = 'Email уже есть в базе!';
           }
@@ -38,7 +38,7 @@ export default function validateInfo(values) {
     let citiesRef = db.collection('users');
     let allCities = await citiesRef.get();
     for(const doc of allCities.docs){
-      console.log(doc.id, '=>', doc.data());
+      // console.log(doc.id, '=>', doc.data());
     }
   }
   logCities();
