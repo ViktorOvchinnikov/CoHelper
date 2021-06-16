@@ -24,9 +24,14 @@ const useForm = (callback, validate) => {
     });
   };
 
-  const handleSubmit = e => {
+  async function handleSubmit(e) {
     e.preventDefault();
-    setErrors(validate(values));
+    let valid_em = []
+    const querySnapshot = await db.collection("users").get();
+    querySnapshot.forEach((doc) => {
+      valid_em.push(doc.data().email);
+    });
+    setErrors(validate(values, valid_em));
     setIsSubmitting(true);
   };
 
@@ -44,13 +49,11 @@ const useForm = (callback, validate) => {
           'companyName': values.username,
           'findFor': values.findFor,
         });
-        console.log(generatedId);
       }
 
     },
     [errors]
   );
-
   return { handleChange, handleSubmit, values, errors };
 };
 

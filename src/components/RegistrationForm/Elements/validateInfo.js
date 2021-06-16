@@ -1,9 +1,9 @@
 import firebase from 'firebase';
 
-export default function validateInfo(values) {
+export default function validateInfo(values, valid_em) {
   let errors = {};
   const db = firebase.firestore();
-  
+
   if (!values.username.trim()) {
     errors.username = 'Введите название!';
   }
@@ -22,47 +22,10 @@ export default function validateInfo(values) {
   } else if (!/\S+@\S+\.\S+/.test(values.email)) {
     errors.email = 'Email введен неверно!';
   } else {
-    const t = async () => {
-       await db.collection("users").get().then((querySnapshot) => {
-        querySnapshot.forEach((doc) => {
-          // console.log(db.collection("users").get())
-          if (values.email == doc.data().email) {
-            errors.email = 'Email уже есть в базе!';
-          }
-        })
-      })
-    }
-    t();
-  }
-  const logCities = async () => {
-    let citiesRef = db.collection('users');
-    let allCities = await citiesRef.get();
-    for(const doc of allCities.docs){
-      // console.log(doc.id, '=>', doc.data());
+    {
+      valid_em.map((em) => { if (em == values.email) errors.email = 'Email уже есть в базе!' });
     }
   }
-  logCities();
-  // function timeoutPromise(interval) {
-  //   return new Promise((resolve, reject) => {
-  //     setTimeout(function(){
-  //       resolve("done");
-  //     }, interval);
-  //   });
-  // };
-
-  // async function timeTest() {
-  //   const timeoutPromise1 = timeoutPromise(3000);
-  //   const timeoutPromise2 = timeoutPromise(3000);
-  //   const timeoutPromise3 = timeoutPromise(3000);
-  
-  //   await timeoutPromise1;
-  //   await timeoutPromise2;
-  //   await timeoutPromise3;
-  //   alert('ready')
-  // }
-
-  // timeTest();
-  // console.log('next')
 
   if (!values.password) {
     errors.password = 'Введите пароль!';

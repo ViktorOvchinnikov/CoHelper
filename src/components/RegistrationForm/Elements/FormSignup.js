@@ -64,7 +64,7 @@ const FormSignup = ({ submitForm }) => {
             placeholder='Введите название населенного пункта'
             value={values.city}
             onChange={handleChange}
-          // Validation like {errors.email && <p>{errors.email}</p>}
+          
           />
         </div>
         <div className='form-inputs'>
