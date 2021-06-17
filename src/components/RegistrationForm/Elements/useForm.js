@@ -31,13 +31,15 @@ const useForm = (callback, validate) => {
     querySnapshot.forEach((doc) => {
       valid_em.push(doc.data().email);
     });
-    setErrors(validate(values, valid_em));
     setIsSubmitting(true);
+    setErrors(validate(values, valid_em));
   };
 
   useEffect(
     () => {
+      console.log(Object.keys(errors).length === 0 && isSubmitting, Object.keys(errors).length, isSubmitting)
       if (Object.keys(errors).length === 0 && isSubmitting) {
+        console.log('true')
         callback();
         let generatedId = db.collection('users').doc().id;
         db.collection('users').doc(generatedId).set({

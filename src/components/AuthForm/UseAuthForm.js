@@ -12,7 +12,7 @@ const UseAuthForm = () => {
     const [error, setError] = useState('');
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [curUser, setCurUser] = useState('')
-
+   
     const handleChange = e => {
         const { name, value } = e.target;
         setValues({
@@ -31,6 +31,7 @@ const UseAuthForm = () => {
                 setIsSubmitting(true);
                 setError('');
                 flag=true;
+
             }
         });
         if(!flag){setError('Email или пароль введен неверно!')} 

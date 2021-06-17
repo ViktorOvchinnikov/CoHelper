@@ -42,6 +42,5 @@ export default function validateInfo(values, valid_em) {
   if (!(values.findFor.advertising || values.findFor.clients || values.findFor.providers || values.findFor.investors)) {
     errors.findFor = 'Выберите хотя бы один вариант';
   }
-  console.log(errors);
   return errors;
 }

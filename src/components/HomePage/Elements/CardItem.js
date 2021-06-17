@@ -18,8 +18,8 @@ function CardItem(props) {
                 {props.email}
               </a>
             </p>
-            <p className="city">Город: Мухосранск</p>
-            <p className="findFor">Ищет: всех кому не лень</p>
+            <p className="city">Город: {props.city}</p>
+            <p className="findFor">Ищет: {props.findFor}</p>
           </div>
           <div className="conf_btn">
             <Button
