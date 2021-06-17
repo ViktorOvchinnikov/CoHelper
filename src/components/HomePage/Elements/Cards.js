@@ -1,10 +1,5 @@
 import React from "react";
 import "../../MainPage/Styles/Cards.css";
-import ikea from "../../../images/img-9.jpg";
-import colab from "../../../images/img-2.jpg";
-import sister from "../../../images/img-3.jpg";
-import rules from "../../../images/img-4.jpg";
-import trends from "../../../images/img-8.jpg";
 import CardItem from "./CardItem.js";
 
 function Cards() {

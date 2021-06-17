@@ -11,6 +11,7 @@ const UseAuthForm = () => {
     
     const [error, setError] = useState('');
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [curUser, setCurUser] = useState('')
 
     const handleChange = e => {
         const { name, value } = e.target;
@@ -26,6 +27,7 @@ const UseAuthForm = () => {
         const querySnapshot = await db.collection("users").get();
         querySnapshot.forEach((doc) => {
             if (doc.data().email == values.email && doc.data().password == values.password) {
+                setCurUser(doc.data().token);
                 setIsSubmitting(true);
                 setError('');
                 flag=true;
@@ -37,7 +39,9 @@ const UseAuthForm = () => {
     useEffect(
         () => {
             if (error.length === 0 && isSubmitting) {
+                localStorage.setItem("token", curUser)
                 window.location.href="/homepage";
+
             }
         }, [error,isSubmitting]
     );
