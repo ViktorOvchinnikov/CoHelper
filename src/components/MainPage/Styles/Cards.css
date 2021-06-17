@@ -1,6 +1,6 @@
 .cards {
   padding: 1rem;
-  background: #fff;
+  background: rgb(255, 249, 231);
 }
 
 h1 {
@@ -62,7 +62,7 @@ h1 {
   width: 100%;
   box-shadow: 0 6px 20px rgba(44, 44, 44, 0.733);
   -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-  filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.274).017));
+  filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.274).017);
   border-radius: 10px;
   overflow: hidden;
   text-decoration: none;
@@ -86,6 +86,8 @@ h1 {
   padding: 10px;
   padding-top: 20px;
 }
+
+
 
 .fade-img {
   animation-name: fade-img;
@@ -133,6 +135,28 @@ h1 {
   color: #252e48;
   font-size: 18px;
   line-height: 24px;
+}
+
+.activity {
+  margin-top: -1em;
+  color: #0c1942;
+  font-size: 20px;
+  line-height: 24px;
+}
+.email{
+  margin-top: 1em; 
+  font-size: 18px;
+}
+.city, .findFor{
+  margin-top: 1em; 
+  font-size: 18px;
+  color: #0c1942;
+}
+.conf_btn{
+  margin: 5%;
+  margin-top: -1em;
+  text-align: center;
+  align-items: center;
 }
 
 @media only screen and (min-width: 1200px) {

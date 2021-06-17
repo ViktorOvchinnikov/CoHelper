@@ -29,9 +29,8 @@
 .btn--test {
   background-color: rgb(175, 184, 181);
   border: 1px solid black;
-  margin: 5%;
-  margin-top: -5%;
   color:black;
+  transition: all 0.3s ease-out;
 }
 
 .btn--medium {
@@ -47,7 +46,7 @@
 .btn--large:hover,
 .btn--medium:hover {
   transition: all 0.3s ease-out;
-  background: rgb(124, 189, 169);
+  background: rgb(55, 194, 164);
   color: #030000;
   transition: 250ms;
 }
